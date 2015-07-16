@@ -1,0 +1,410 @@
+@import "variables.less";
+@import "base.less";
+
+.material-icons {
+  vertical-align: middle;
+}
+
+a {
+  color: @blue;
+}
+
+nav {
+  z-index: 100;
+  .layout-transparent .mdl-layout__header,
+  .layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+    color: white;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(255, 255, 255, .85);
+  a {
+    padding: .75em;
+    color: @gray;
+    font-weight: normal;
+    &.logo {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+    &.attend {
+      float: right;
+      background: @blue;
+      color: white;
+      font-weight: bold;
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
+}
+
+header {
+  padding: 0;
+  text-align: center;
+  height: 100vh;
+  max-height: 900px;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  background: @white;
+  color: @black;
+  container {
+    height: 330px;
+    margin-top: 5em;
+    margin-bottom: 2em;
+  }
+  animation {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+}
+
+#about {
+  background: @blue;
+  color: @white;
+  padding-top: 0;
+  .card {
+    margin-top: -4.5em;
+  }
+  .stats {
+    margin-top: 4em;
+    h1 {
+      margin-bottom: 0;
+      font-size: 100px;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  }
+}
+
+#photos {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  photo {
+    display: flex;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    min-width: 300px;
+    width: auto;
+    margin: 10px;
+    position: relative;
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-shadow: 0 0 4px rgba(0, 0, 0, .75);
+      color: white;
+      padding: 1em;
+      // background: linear-gradient(to bottom, transparent 0%, transparent 5%, transparent 100%);
+      opacity: .5;
+      overflow: hidden;
+      .transition;
+      span {
+        position: relative;
+        display: inline-block;
+        .transition;
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      &:hover {
+        opacity: 1;
+        // background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 0%, transparent 50%, transparent 100%);
+        box-shadow: inset 0 10px 40px rgba(0,0,0,.25);
+        span {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+#venue {
+  padding: 0;
+  position: relative;
+  mapbox {
+    height: 550px;
+    width: 100vw;
+    display: block;
+  }
+  overlay {
+    // padding: 4em 0;
+    position: absolute;
+    top: 4em;
+    left: 4em;
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+  }
+  .card-address {
+    padding-right: .5em;
+    p {
+      margin-bottom: 0;
+    }
+    a {
+      text-align: center;
+      display: block;
+      border-right: 1px solid @ltgray;
+    }
+    i {
+      font-size: 3em;
+      display: block;
+      // margin-bottom: .5em;
+    }
+    column:last-of-type a {
+      border-right-width: 0px;
+    }
+  }
+  .card-holder {
+    position: relative;
+  }
+  .card-attach {
+    border-top: 1px solid @ltgray;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: -6px;
+    background: @paper;
+  }
+  .card-transit, .card-driving {
+    transform: translateY(40px);
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+  }
+  &.active-card-transit {
+    .card-transit {
+      transform: translateY(0px);
+      opacity: 1;
+      visibility: visible;
+    }
+    .link-transit {
+      color: @gray;
+    }
+  }
+  &.active-card-driving {
+    .card-driving {
+      transform: translateY(0px);
+      opacity: 1;
+      visibility: visible;
+    }
+    .link-driving {
+      color: @gray;
+    }
+  }
+}
+
+#schedule {
+  background:#3F51B5;
+  color: white;
+  .card-schedule {
+    margin: 1em auto;
+    max-width: 400px;
+    table {
+      display: block;
+      tbody {
+        display: block;
+        tr {
+          border-bottom: 1px solid @ltgray;
+          display: block;
+          &:last-of-type {
+            border-bottom-width: 0px;
+          }
+          td {
+            padding: .5em;
+            &:first-of-type {
+              width: 90px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.card {
+  display: block;
+  background-color: white;
+  border-radius: 4px;
+  color: @gray;
+  box-shadow: 0 1px 7px rgba(0,0,0,0.06),0 1px 3px rgba(0,0,0,0.15);
+  padding: 1.5em;
+  .transition;
+  h1, h2, h3, h4 {
+    color: @black;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+
+#sponsors {
+  background: #5A7E8C;
+  color: white;
+  padding-bottom: 0px;
+  container {
+    max-width: (280px*3)+100px;
+  }
+  .card-sponsor {
+    padding: 0;
+    width: 100%;
+    max-width: 280px;
+    margin: auto;
+    margin-bottom: 1em;
+    overflow: hidden;
+    z-index: 5;
+    &:hover {
+      color: @blue;
+    }
+    .logo {
+      padding: 0 20px;
+      line-height: 200px;
+      height: 200px;
+      background: @paper;
+    }
+    i {
+      line-height: 2.75em;
+      margin-right: .75em;
+    }
+    .company {
+      padding: 1em;
+      width: 100%;
+      background: white;
+    }
+  }
+  .bottom {
+    background: white;
+    color: @gray;
+    margin-top: -6em;
+    padding-top: 7em;
+  }
+}
+
+#attend {
+  background: @white;
+  container {
+    max-width: 400px;
+  }
+  .field {
+    width: 100%;
+    display: block;
+  }
+  .tabs {
+    a {
+      flex-grow: 1;
+      padding: 1em 0;
+      border-bottom: 4px solid transparent;
+      color: @gray;
+      &:hover {
+        color: @blue;
+      }
+      &:active, .active {
+        color: @blue;
+        border-bottom-color: @blue;
+      }
+    }
+  }
+  .text-center {
+    position: relative;
+  }
+  .card {
+    opacity: 0;
+    position: absolute;
+    transform: translateY(20px);
+    width: 100%;
+    &:last-of-type {
+      position: relative;
+      margin-bottom: 300px;
+    }
+  }
+  &.active-student {
+    .tab-student {
+      color: @blue;
+      border-bottom-color: @blue;
+    }
+    .card-student {
+      visibility: visible;
+      transform: translateY(0px);
+      opacity: 1;
+      pointer-events: default;
+    }
+  }
+  &.active-mentor {
+    .tab-mentor {
+      color: @blue;
+      border-bottom-color: @blue;
+    }
+    .card-mentor {
+      visibility: visible;
+      transform: translateY(0px);
+      opacity: 1;
+      pointer-events: default;
+    }
+  }
+  &.active-sponsor {
+    .tab-sponsor {
+      color: @blue;
+      border-bottom-color: @blue;
+    }
+    .card-sponsor {
+      visibility: visible;
+      transform: translateY(0px);
+      opacity: 1;
+      pointer-events: default;
+    }
+  }
+}
+
+#contact {
+  background: @gray;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background: @black;
+  color: white;
+  h2 {
+    float: left;
+    border-right: 1px solid gray;
+    margin-right: .75em;
+    padding-right:.75em;
+    line-height: 1.5em;
+  }
+  iframe {
+    display: inline-block;
+  }
+  .facebook-like {
+    overflow: hidden;
+    width: 80px;
+    height: 20px;
+  }
+  .github-star {
+    width: 150px;
+    height: 20px;
+  }
+  .back-to-top {
+    float: right;
+    margin-top: -100px;
+    background: darken(white,.5%);
+    &:hover {
+      background: white;
+    }
+    &:active {
+      background: darken(white, 10%);
+    }
+  }
+}
