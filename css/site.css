@@ -522,6 +522,10 @@ nav a.logo {
   padding-left: 2em;
   padding-right: 2em;
 }
+nav a.logo img {
+  height: 1em;
+  vertical-align: top;
+}
 nav a.attend {
   float: right;
   background: #006ad1;
@@ -549,6 +553,10 @@ header container {
 header container h1 {
   font-size: 5em;
   margin-bottom: 0;
+}
+header container h1 img {
+  height: 1em;
+  vertical-align: top;
 }
 header container p.lead {
   margin-bottom: .5em;
@@ -783,9 +791,6 @@ header animation {
 #attend {
   background: #ffffff;
 }
-#attend container {
-  max-width: 400px;
-}
 #attend .field {
   width: 100%;
   display: block;
@@ -807,15 +812,8 @@ header animation {
 #attend .text-center {
   position: relative;
 }
-#attend .card {
-  opacity: 0;
-  position: absolute;
-  transform: translateY(20px);
-  width: 100%;
-}
-#attend .card:last-of-type {
-  position: relative;
-  margin-bottom: 300px;
+#attend form {
+  flex-grow: 1;
 }
 #attend.active-student .tab-student {
   color: #006ad1;

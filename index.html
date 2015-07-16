@@ -41,7 +41,7 @@
 
         <header>
           <container>
-            <h1><b>STEM</b>Hacks</h1>
+            <h1><img src="/img/logo.svg" alt="logo"> <b>STEM</b>Hacks</h1>
             <p class="lead">Programmers today, leaders tomorrow.</p>
             <p><a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">event</i> October 10-11</a> <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">place</i> Microsoft Malvern</a></p>
           </container>
@@ -271,69 +271,71 @@
         </section>
 
 
-        <section id="attend" class="active-student">
+        <section id="attend">
           <container>
             <div class="text-center">
             <h1>Attend</h1>
-            <row class="tabs">
+            <!-- <row class="tabs">
               <a onclick="attendTab('student')" class="tab-student">Student</a>
               <a onclick="attendTab('mentor')" class="tab-mentor">Mentor</a>
               <a onclick="attendTab('sponsor')" class="tab-sponsor">Sponsor</a>
+            </row> -->
+            <row>
+              <form action="#" class="card card-student" size="33">
+                <h3>Student Intrerest Form</h3>
+                <p>Student registration isn't open right now, but we'll send you an email as soon as it opens.</p>
+                <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                  <input class="mdl-textfield__input" type="text" id="name" required/>
+                  <label class="mdl-textfield__label" for="name">Full Name</label>
+                </div>
+                <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                  <input class="mdl-textfield__input" type="email" id="email" required/>
+                  <label class="mdl-textfield__label" for="email">Email</label>
+                </div>
+                <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                  <input class="mdl-textfield__input" type="text" id="school" required/>
+                  <label class="mdl-textfield__label" for="school">Company</label>
+                </div>
+                <p class="text-right">
+                  Subscribe
+                  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                    <i class="material-icons">arrow_forward</i>
+                  </button>
+                </p>
+              </form>
+              <form action="#" class="card card-mentor" size="33">
+                <h3>Mentor Registration</h3>
+                <p>We would love to have you over!</p>
+                <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                  <input class="mdl-textfield__input" type="text" id="name" required/>
+                  <label class="mdl-textfield__label" for="name">Full Name</label>
+                </div>
+                <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                  <input class="mdl-textfield__input" type="email" id="email" required/>
+                  <label class="mdl-textfield__label" for="email">Email</label>
+                </div>
+                <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                  <input class="mdl-textfield__input" type="text" id="school" required/>
+                  <label class="mdl-textfield__label" for="school">Company/Organization</label>
+                </div>
+                <p class="text-right">
+                  Register
+                  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                    <i class="material-icons">arrow_forward</i>
+                  </button>
+                </p>
+              </form>
+              <form action="#" class="card card-sponsor" size="33">
+                <h3>Become a Sponsor!</h3>
+                <p>We would be forever grateful if you sponsored us.</p>
+                <p class="text-right">
+                  Sponsorship information 
+                  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                    <i class="material-icons">arrow_forward</i>
+                  </button>
+                </p>
+              </form>
             </row>
-            <form action="#" class="card card-student">
-              <h3>Student Intrerest Form</h3>
-              <p>Student registration isn't open right now, but we'll send you an email as soon as it opens.</p>
-              <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
-                <input class="mdl-textfield__input" type="text" id="name" required/>
-                <label class="mdl-textfield__label" for="name">Full Name</label>
-              </div>
-              <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
-                <input class="mdl-textfield__input" type="email" id="email" required/>
-                <label class="mdl-textfield__label" for="email">Email</label>
-              </div>
-              <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
-                <input class="mdl-textfield__input" type="text" id="school" required/>
-                <label class="mdl-textfield__label" for="school">Company</label>
-              </div>
-              <p class="text-right">
-                Subscribe
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-                  <i class="material-icons">arrow_forward</i>
-                </button>
-              </p>
-            </form>
-            <form action="#" class="card card-mentor">
-              <h3>Mentor Registration</h3>
-              <p>We would love to have you over!</p>
-              <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
-                <input class="mdl-textfield__input" type="text" id="name" required/>
-                <label class="mdl-textfield__label" for="name">Full Name</label>
-              </div>
-              <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
-                <input class="mdl-textfield__input" type="email" id="email" required/>
-                <label class="mdl-textfield__label" for="email">Email</label>
-              </div>
-              <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
-                <input class="mdl-textfield__input" type="text" id="school" required/>
-                <label class="mdl-textfield__label" for="school">Company/Organization</label>
-              </div>
-              <p class="text-right">
-                Register
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-                  <i class="material-icons">arrow_forward</i>
-                </button>
-              </p>
-            </form>
-            <form action="#" class="card card-sponsor">
-              <h3>Become a Sponsor!</h3>
-              <p>We would be forever grateful if you sponsored us.</p>
-              <p class="text-right">
-                Sponsorship information 
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-                  <i class="material-icons">arrow_forward</i>
-                </button>
-              </p>
-            </form>
           </container>
         </section>
 

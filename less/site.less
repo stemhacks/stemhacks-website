@@ -31,6 +31,10 @@ nav {
     &.logo {
       padding-left: 2em;
       padding-right: 2em;
+      img {
+        height: 1em;
+        vertical-align: top;
+      }
     }
     &.attend {
       float: right;
@@ -60,6 +64,10 @@ header {
     h1 {
       font-size: 5em;
       margin-bottom: 0;
+      img {
+        height: 1em;
+        vertical-align: top;
+      }
     }
     p.lead {
       margin-bottom: .5em;
@@ -304,7 +312,7 @@ header {
 #attend {
   background: @white;
   container {
-    max-width: 400px;
+    // max-width: 400px;
   }
   .field {
     width: 100%;
@@ -329,14 +337,17 @@ header {
     position: relative;
   }
   .card {
-    opacity: 0;
-    position: absolute;
-    transform: translateY(20px);
-    width: 100%;
+    // opacity: 0;
+    // position: absolute;
+    // transform: translateY(20px);
+    // width: 100%;
     &:last-of-type {
-      position: relative;
-      margin-bottom: 300px;
+      // position: relative;
+      // margin-bottom: 300px;
     }
+  }
+  form {
+    flex-grow: 1;
   }
   &.active-student {
     .tab-student {
