@@ -23,6 +23,7 @@ nav {
   width: 100%;
   height: auto;
   background: rgba(255, 255, 255, .85);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .25);
   a {
     padding: .75em;
     color: @gray;
@@ -47,7 +48,7 @@ header {
   text-align: center;
   height: 100vh;
   max-height: 900px;
-  min-height: 550px;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
   background: @white;
@@ -56,6 +57,13 @@ header {
     height: 330px;
     margin-top: 5em;
     margin-bottom: 2em;
+    h1 {
+      font-size: 5em;
+      margin-bottom: 0;
+    }
+    p.lead {
+      margin-bottom: .5em;
+    }
   }
   animation {
     height: 100vh;
@@ -207,7 +215,7 @@ header {
 }
 
 #schedule {
-  background:#3F51B5;
+  background: @blue;
   color: white;
   .card-schedule {
     margin: 1em auto;
@@ -252,7 +260,7 @@ header {
 }
 
 #sponsors {
-  background: #5A7E8C;
+  background: @blue;
   color: white;
   padding-bottom: 0px;
   container {
@@ -369,7 +377,7 @@ header {
 }
 
 #contact {
-  background: @gray;
+  background: @blue;
   color: white;
   text-align: center;
 }

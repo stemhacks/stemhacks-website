@@ -19,7 +19,8 @@ count4.start();
 // Provide your access token
 L.mapbox.accessToken = 'pk.eyJ1IjoidmljbG91IiwiYSI6Imo2TnUwRVEifQ.Lym1WQrkrRlIXtSKS7n15w';
 // Create a map in the div #map
-var map = L.mapbox.map('map', 'viclou.mn43oghc', {scrollWheelZoom: false}).setView([40.05337319344778,-75.55186271667479], 14);
+var map = L.mapbox.map('map', 'viclou.mn43oghc', {scrollWheelZoom: false,zoomControl: false}).setView([40.05337319344778,-75.55186271667479], 14);
+new L.Control.Zoom({ position: 'topright' }).addTo(map);
 L.mapbox.featureLayer({
     // this feature is in the GeoJSON format: see geojson.org
     // for the full specification

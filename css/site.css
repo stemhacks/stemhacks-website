@@ -495,7 +495,7 @@ iframe {
   vertical-align: middle;
 }
 a {
-  color: #34c6f8;
+  color: #006ad1;
 }
 nav {
   z-index: 100;
@@ -505,6 +505,7 @@ nav {
   width: 100%;
   height: auto;
   background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 nav .layout-transparent .mdl-layout__header,
 nav .layout-transparent .mdl-layout__drawer-button {
@@ -523,7 +524,7 @@ nav a.logo {
 }
 nav a.attend {
   float: right;
-  background: #34c6f8;
+  background: #006ad1;
   color: white;
   font-weight: bold;
   padding-left: 2em;
@@ -534,7 +535,7 @@ header {
   text-align: center;
   height: 100vh;
   max-height: 900px;
-  min-height: 550px;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
   background: #ffffff;
@@ -545,13 +546,20 @@ header container {
   margin-top: 5em;
   margin-bottom: 2em;
 }
+header container h1 {
+  font-size: 5em;
+  margin-bottom: 0;
+}
+header container p.lead {
+  margin-bottom: .5em;
+}
 header animation {
   height: 100vh;
   width: 100%;
   position: relative;
 }
 #about {
-  background: #34c6f8;
+  background: #006ad1;
   color: #ffffff;
   padding-top: 0;
 }
@@ -685,7 +693,7 @@ header animation {
   color: #757575;
 }
 #schedule {
-  background: #3F51B5;
+  background: #006ad1;
   color: white;
 }
 #schedule .card-schedule {
@@ -732,7 +740,7 @@ header animation {
   font-weight: normal;
 }
 #sponsors {
-  background: #5A7E8C;
+  background: #006ad1;
   color: white;
   padding-bottom: 0px;
 }
@@ -749,7 +757,7 @@ header animation {
   z-index: 5;
 }
 #sponsors .card-sponsor:hover {
-  color: #34c6f8;
+  color: #006ad1;
 }
 #sponsors .card-sponsor .logo {
   padding: 0 20px;
@@ -789,12 +797,12 @@ header animation {
   color: #757575;
 }
 #attend .tabs a:hover {
-  color: #34c6f8;
+  color: #006ad1;
 }
 #attend .tabs a:active,
 #attend .tabs a .active {
-  color: #34c6f8;
-  border-bottom-color: #34c6f8;
+  color: #006ad1;
+  border-bottom-color: #006ad1;
 }
 #attend .text-center {
   position: relative;
@@ -810,8 +818,8 @@ header animation {
   margin-bottom: 300px;
 }
 #attend.active-student .tab-student {
-  color: #34c6f8;
-  border-bottom-color: #34c6f8;
+  color: #006ad1;
+  border-bottom-color: #006ad1;
 }
 #attend.active-student .card-student {
   visibility: visible;
@@ -820,8 +828,8 @@ header animation {
   pointer-events: default;
 }
 #attend.active-mentor .tab-mentor {
-  color: #34c6f8;
-  border-bottom-color: #34c6f8;
+  color: #006ad1;
+  border-bottom-color: #006ad1;
 }
 #attend.active-mentor .card-mentor {
   visibility: visible;
@@ -830,8 +838,8 @@ header animation {
   pointer-events: default;
 }
 #attend.active-sponsor .tab-sponsor {
-  color: #34c6f8;
-  border-bottom-color: #34c6f8;
+  color: #006ad1;
+  border-bottom-color: #006ad1;
 }
 #attend.active-sponsor .card-sponsor {
   visibility: visible;
@@ -840,7 +848,7 @@ header animation {
   pointer-events: default;
 }
 #contact {
-  background: #757575;
+  background: #006ad1;
   color: white;
   text-align: center;
 }
