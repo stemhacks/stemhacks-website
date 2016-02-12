@@ -509,12 +509,17 @@ nav {
   height: auto;
   background: rgba(255, 255, 255, 0.85);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  transition: all 180ms ease;
+  translateZ: 0px;
 }
 nav .layout-transparent .mdl-layout__header,
 nav .layout-transparent .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
        your background is light. */
   color: white;
+}
+nav.at-top {
+  box-shadow: none;
 }
 nav a {
   padding: .75em;

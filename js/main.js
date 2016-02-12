@@ -63,3 +63,22 @@ function attendTab(tab) {
 $(".back-to-top").on( "click", function() {
   $('body').animate({ scrollTop: $('#top')[0].scrollHeight}, 500);
 });
+
+// Scroll Timer!
+var scrollTimer = null;
+$(window).scroll(function () {
+		if (scrollTimer) {
+				clearTimeout(scrollTimer);   // clear any previous pending timer
+		}
+		scrollTimer = setTimeout(handleScroll, 40);// 50);   // set new timer
+});
+
+function handleScroll() {
+	scrollTimer = null;
+  if ($(".nav-top").offset().top < 20) {
+    $(".nav-top").addClass("at-top");
+  }
+  else {
+    $(".nav-top").removeClass("at-top");
+  }
+}
