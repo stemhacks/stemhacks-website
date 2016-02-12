@@ -32,10 +32,14 @@ nav {
     padding: .75em;
     color: @gray;
     font-weight: normal;
+    &:hover {
+      background: darken(@white, 5%);
+    }
     &.logo {
       padding-left: 2em;
       padding-right: 2em;
       img {
+        height: 1em;
         vertical-align: baseline;
         transform: scale(1.85);
         margin-right: 12px;
@@ -49,6 +53,9 @@ nav {
       font-weight: bold;
       padding-left: 2em;
       padding-right: 2em;
+      &:hover, &.active {
+        background: lighten(@blue, 10%);
+      }
     }
   }
 }

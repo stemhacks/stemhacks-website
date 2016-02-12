@@ -526,11 +526,15 @@ nav a {
   color: #757575;
   font-weight: normal;
 }
+nav a:hover {
+  background: #f2f2f2;
+}
 nav a.logo {
   padding-left: 2em;
   padding-right: 2em;
 }
 nav a.logo img {
+  height: 1em;
   vertical-align: baseline;
   transform: scale(1.85);
   margin-right: 12px;
@@ -543,6 +547,10 @@ nav a.attend {
   font-weight: bold;
   padding-left: 2em;
   padding-right: 2em;
+}
+nav a.attend:hover,
+nav a.attend.active {
+  background: #0584ff;
 }
 header {
   padding: 0;
