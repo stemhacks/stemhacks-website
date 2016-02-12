@@ -29,13 +29,13 @@
         <span id="top"></span>
 
         <nav>
-          <a href="#" class="logo mdl-js-ripple-effect"><b>STEM</b>Hacks</a>
-          <a href="#" class="mdl-js-ripple-effect">Home</a>
-          <a href="#" class="mdl-js-ripple-effect">About</a>
-          <a href="#" class="mdl-js-ripple-effect">Schedule</a>
-          <a href="#" class="mdl-js-ripple-effect">Venue</a>
-          <a href="#" class="mdl-js-ripple-effect">Sponsors</a>
-          <a href="#" class="mdl-js-ripple-effect">Contact</a>
+          <a href="#" class="logo mdl-js-ripple-effect"><img src="/img/brand/logo.svg"/> <b>STEM</b>Hacks</a>
+          <a href="#" class="mdl-js-ripple-effect hidden-mobile">Home</a>
+          <a href="#" class="mdl-js-ripple-effect hidden-mobile">About</a>
+          <a href="#" class="mdl-js-ripple-effect hidden-mobile">Schedule</a>
+          <a href="#" class="mdl-js-ripple-effect hidden-mobile">Venue</a>
+          <a href="#" class="mdl-js-ripple-effect hidden-mobile">Sponsors</a>
+          <a href="#" class="mdl-js-ripple-effect hidden-mobile">Contact</a>
           <a href="#" class="attend mdl-js-ripple-effect">Attend</a>
         </nav>
 
@@ -110,9 +110,9 @@
               <h1>Schedule</h1>
               <p class="lead">A weekend of action-packed events, workshops, mentorship, and fun breakout sessions.</p>
             </div>
-            <br>
-            <br>
-            <br>
+            <br class="hidden-mobile">
+            <br class="hidden-mobile">
+            <br class="hidden-mobile">
             <row>
               <column>
                 <h3 class="text-center">Saturday</h3>
@@ -159,7 +159,6 @@
 
 
         <section id="venue">
-          <mapbox id="map"></mapbox>
           <overlay>
               <div class="card card-address">
                 <row>
@@ -198,6 +197,7 @@
                 <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Google Maps</a>
               </div>
           </overlay>
+          <mapbox id="map"></mapbox>
         </section>
 
         <section id="sponsors">
@@ -343,9 +343,9 @@
           <container>
             <h1>Contact Us</h1>
             <p class="lead">Have any questions? We're here to help.</p>
-            <p>Information: contact@stemhacks.com</p>
-            <p>Sponsorships: sponsor@stemhacks.com</p>
-            <p>Press: press@stemhacks.com</p>
+            <p>Information: contact<span class="at"></span>stemhacks.com</p>
+            <p>Sponsorships: sponsor<span class="at"></span>stemhacks.com</p>
+            <p>Press: press<span class="at"></span>stemhacks.com</p>
           </container>
         </section>
 
@@ -355,7 +355,9 @@
               <i class="material-icons">keyboard_arrow_up</i>
             </a>
             <h2><b>STEM</b>Hacks</h2>
-            An event organized by Downingtown STEM Academy students. Site by Victor Lourng.
+            <p>
+              An event organized by Downingtown STEM Academy students. Site by Victor Lourng.
+            </p>
             <br>
             <a href="https://twitter.com/stemhacks" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @stemhacks</a>
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://stemhacks.com" data-via="stemhacks" data-related="stemhacks" data-dnt="true">Tweet</a>

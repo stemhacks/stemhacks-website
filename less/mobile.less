@@ -1,0 +1,129 @@
+.visible-mobile, .hidden-desktop {
+  display: none!important;
+}
+
+@media (max-width: @mobile) {
+  .hidden-mobile, .visible-mobile {
+    display: none!important;
+  }
+  .visible-mobile, .hidden-desktop {
+    display: block!important;
+  }
+  body {
+    font-size: 16px;
+  }
+  header, section, footer {
+    padding: 40px 0;
+  }
+  nav {
+    background: white!important;
+    color: @black!important;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  h2, h3 {
+    font-size: 2.5em;
+  }
+  p.lead {
+    font-size: 1.5em;
+  }
+  header {
+    height: auto;
+    animation {
+      display: none;
+    }
+  }
+  #about .stats {
+    text-align: left;
+    h1 {
+      font-size: 1.5em;
+      float: left;
+      display: inline-block;
+      font-weight: bold;
+      width: 50%;
+      text-align: right;
+      padding-right: 1em;
+    }
+  }
+  #photos {
+    display: none;
+    padding: 0;
+    display: block;
+    flex-wrap: initial;
+    photo {
+      // display: none;
+      // &:first-of-type {
+        display: block;
+        width: 90vw;
+        // pointer-events: none;
+        margin: 0;
+        flex-grow: initial;
+        white-space: nowrap;
+      // }
+      a {
+        opacity: 1;
+        box-shadow: inset 0 10px 40px rgba(0, 0, 0, 0.25);
+        span {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  #venue {
+    mapbox {
+      height: 40vh;
+      max-height: 300px;
+    }
+    overlay {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: auto;
+      .link-directions {
+        float: right;
+        margin-top: -5em;
+      }
+      mapbox, .card-transit, .card-driving {
+        display: none;
+      }
+    }
+    .card {
+      display: block;
+      position: relative;
+      width: 100%;
+    }
+  }
+  #sponsors .card-sponsor .logo {
+    display: none;
+  }
+  #sponsors .bottom {
+    background: none;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  footer {
+    text-align: center;
+    .back-to-top {
+      float: initial;
+    }
+    h2 {
+      padding: 0;
+      border-right: 0;
+      display: block;
+      float: initial;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  header container h1 {
+    font-size: 4em;
+  }
+}
