@@ -531,8 +531,10 @@ nav a.logo {
   padding-right: 2em;
 }
 nav a.logo img {
-  height: 1em;
-  vertical-align: top;
+  vertical-align: baseline;
+  transform: scale(1.85);
+  margin-right: 12px;
+  padding-top: 2px;
 }
 nav a.attend {
   float: right;
