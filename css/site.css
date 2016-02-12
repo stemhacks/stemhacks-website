@@ -650,6 +650,7 @@ header animation {
   width: 100%;
   max-width: 580px;
   height: auto;
+  z-index: 400;
 }
 #venue .card-address {
   padding-right: .5em;
@@ -974,11 +975,6 @@ footer .back-to-top:active {
   #venue overlay .link-directions {
     float: right;
     margin-top: -5em;
-  }
-  #venue overlay mapbox,
-  #venue overlay .card-transit,
-  #venue overlay .card-driving {
-    display: none;
   }
   #venue .card {
     display: block;

@@ -41,13 +41,13 @@
 
         <header>
           <container>
-            <h1><img src="/img/logo.svg" alt="logo"> <b>STEM</b>Hacks</h1>
+            <h1><img src="/img/brand/logo.svg" alt="logo"> <b>STEM</b>Hacks</h1>
             <p class="lead">Programmers today, leaders tomorrow.</p>
             <p><a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">event</i> October 10-11</a> <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">place</i> Microsoft Malvern</a></p>
           </container>
-          <animation>
+          <!-- <animation>
             <h1>ANIMATION GOES HERE</h1>
-          </animation>
+          </animation> -->
         </header>
 
         <section id="about">
@@ -167,13 +167,13 @@
                     <p>355 Street Road <br> Malvern PA, 19123</p>
                   </column>
                   <column>
-                    <a href="#map" class="link-transit" onclick="mapTransit()">
+                    <a href="#map" class="link-transit hidden-mobile" onclick="mapTransit()">
                       <i class="material-icons">directions_transit</i>
                       Transit
                     </a>
                   </column>
                   <column>
-                    <a href="#map" class="link-driving" onclick="mapDriving()">
+                    <a href="#map" class="link-driving hidden-mobile" onclick="mapDriving()">
                       <i class="material-icons">directions_car</i>
                       Driving
                     </a>
@@ -186,12 +186,12 @@
                   </column>
                 </row>
               </div>
-              <div class="card card-attach card-transit">
+              <div class="card card-attach card-transit hidden-mobile">
                 <h3>Public Transit  <i class="material-icons float-right">directions_transit</i></h3>
                 <p><a href="#">SEPTA</a> provides hourly trains between Malvern and Center City Philadelphia.</p>
                 <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Schedule</a>                     <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Fares</a>
               </div>
-              <div class="card card-attach card-driving">
+              <div class="card card-attach card-driving hidden-mobile">
                 <h3>Driving  <i class="material-icons float-right">directions_car</i></h3>
                 <p>Take US 202 to Swedesford Rd North. Turn right at the first light. The venue is on your left.</p>
                 <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Google Maps</a>
