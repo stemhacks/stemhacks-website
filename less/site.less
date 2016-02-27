@@ -46,8 +46,7 @@ nav {
         padding-top: 2px
       }
     }
-    &.attend {
-      float: right;
+    &.blue-link {
       background: @blue;
       color: white;
       font-weight: bold;
@@ -56,6 +55,12 @@ nav {
       &:hover, &.active {
         background: lighten(@blue, 10%);
       }
+    }
+    &.hamburger {
+      float: left!important;
+    }
+    &.attend {
+      float: right;
     }
   }
 }
@@ -363,12 +368,19 @@ header {
   form {
     flex-grow: 1;
   }
+  .card {
+    display: none;
+    margin: auto;
+    max-width: 800px;
+    margin-top: 1em;
+  }
   &.active-student {
     .tab-student {
       color: @blue;
       border-bottom-color: @blue;
     }
     .card-student {
+      display: block;
       visibility: visible;
       transform: translateY(0px);
       opacity: 1;
@@ -381,6 +393,7 @@ header {
       border-bottom-color: @blue;
     }
     .card-mentor {
+      display: block;
       visibility: visible;
       transform: translateY(0px);
       opacity: 1;
@@ -393,6 +406,7 @@ header {
       border-bottom-color: @blue;
     }
     .card-sponsor {
+      display: block;
       visibility: visible;
       transform: translateY(0px);
       opacity: 1;
@@ -439,6 +453,20 @@ footer {
     &:active {
       background: darken(white, 10%);
     }
+  }
+}
+
+// Buttons
+.button {
+  background: @blue;
+  color: white;
+  font-weight: bold;
+  padding: .75em 1.5em;
+  margin: .25em;
+  border-radius: @border-radius;
+  .transition;
+  &:hover, &.active {
+    background: lighten(@blue, 10%);
   }
 }
 

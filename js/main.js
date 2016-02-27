@@ -1,3 +1,16 @@
+$(document).ready(function() {
+  // Back to top
+  $(".back-to-top").on( "click", function() {
+    $('body').animate({ scrollTop: $('#top')[0].scrollHeight}, 500);
+  });
+
+
+  // Mobile nav
+  $(".toggle-nav").on("click", function() {
+    $('body').toggleClass("nav-is-open");
+  });
+});
+
 // Countup
 var options = {
   useEasing : true,
@@ -56,13 +69,9 @@ function mapDriving() {
   map.setView([40.046014541872594,-75.87357788085936], 10);
 }
 function attendTab(tab) {
+  event.preventDefault();
   $("#attend").attr('class', ('active-'+tab));
 }
-
-// Back to top
-$(".back-to-top").on( "click", function() {
-  $('body').animate({ scrollTop: $('#top')[0].scrollHeight}, 500);
-});
 
 // Scroll Timer!
 var scrollTimer = null;

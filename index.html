@@ -33,7 +33,7 @@
         <span id="top"></span>
 
         <nav class="nav-top at-top">
-          <a href="#" class="logo mdl-js-ripple-effect"><img src="/img/brand/logo.svg"/> <b>STEM</b>Hacks</a><a href="#" class="mdl-js-ripple-effect hidden-mobile">Home</a><a href="#about" class="mdl-js-ripple-effect hidden-mobile">About</a><a href="#schedule" class="mdl-js-ripple-effect hidden-mobile">Schedule</a><a href="#venue" class="mdl-js-ripple-effect hidden-mobile">Venue</a><a href="#sponsors" class="mdl-js-ripple-effect hidden-mobile">Sponsors</a><a href="#faq" class="mdl-js-ripple-effect hidden-mobile">FAQ</a><a href="#contact" class="mdl-js-ripple-effect hidden-mobile">Contact</a><a href="#attend" class="attend mdl-js-ripple-effect">Attend</a>
+          <a class="hamburger blue-link hidden-desktop toggle-nav">Menu</a><a href="#" class="logo mdl-js-ripple-effect"><img src="/img/brand/logo.svg"/> <b>STEM</b>Hacks</a><span class="mobile-menu"><a href="#" class="mdl-js-ripple-effect toggle-nav">Home</a><a href="#about" class="mdl-js-ripple-effect toggle-nav">About</a><a href="#schedule" class="mdl-js-ripple-effect toggle-nav">Schedule</a><a href="#venue" class="mdl-js-ripple-effect toggle-nav">Venue</a><a href="#sponsors" class="mdl-js-ripple-effect toggle-nav">Sponsors</a><a href="#faq" class="mdl-js-ripple-effect toggle-nav">FAQ</a><a href="#contact" class="mdl-js-ripple-effect toggle-nav">Contact</a></span><a href="#attend" class="attend blue-link mdl-js-ripple-effect">Attend</a>
         </nav>
 
         <header>
@@ -107,8 +107,6 @@
               <h1>Schedule</h1>
               <p class="lead">A weekend of action-packed events, workshops, mentorship, and fun breakout sessions.</p>
             </div>
-            <br class="hidden-mobile">
-            <br class="hidden-mobile">
             <br class="hidden-mobile">
             <row>
               <column>
@@ -260,7 +258,7 @@
               </column>
             </rows>
           </container>
-          <div class="bottom">
+          <div class="bottom text-center">
             <container>
               <p>(Psst... Interested in supporting STEMHacks? Take a look at our <a href="#">Sponsorship Document</a>!)</p>
             </container>
@@ -268,69 +266,74 @@
         </section>
 
 
-        <section id="attend">
+        <section id="attend" class="active-buttons">
           <container>
             <div class="text-center">
             <h1>Attend</h1>
-            <!-- <row class="tabs">
-              <a onclick="attendTab('student')" class="tab-student">Student</a>
-              <a onclick="attendTab('mentor')" class="tab-mentor">Mentor</a>
-              <a onclick="attendTab('sponsor')" class="tab-sponsor">Sponsor</a>
-            </row> -->
+            <p class="lead">Who are you?</p>
+            <a onclick="attendTab('student')" class="button">I am currently a high school student</a>
+            <a onclick="attendTab('mentor')" class="button">I want to mentor</a>
+            <a onclick="attendTab('sponsor')" class="button">I want to sposnor</a>
             <row>
-              <form action="#" class="card card-student" size="33">
-                <h3>Student Intrerest Form</h3>
-                <p>Student registration isn't open right now, but we'll send you an email as soon as it opens.</p>
-                <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
-                  <input class="mdl-textfield__input" type="text" id="name" required/>
-                  <label class="mdl-textfield__label" for="name">Full Name</label>
-                </div>
-                <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
-                  <input class="mdl-textfield__input" type="email" id="email" required/>
-                  <label class="mdl-textfield__label" for="email">Email</label>
-                </div>
-                <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
-                  <input class="mdl-textfield__input" type="text" id="school" required/>
-                  <label class="mdl-textfield__label" for="school">Company</label>
-                </div>
-                <p class="text-right">
-                  Subscribe
-                  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-                    <i class="material-icons">arrow_forward</i>
-                  </button>
-                </p>
+              <form action="#" class="card card-student">
+                <container>
+                  <h3>Student Intrerest Form</h3>
+                  <p>Student registration isn't open right now, but we'll send you an email as soon as it opens.</p>
+                  <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                    <input class="mdl-textfield__input" type="text" id="name" required/>
+                    <label class="mdl-textfield__label" for="name">Full Name</label>
+                  </div>
+                  <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                    <input class="mdl-textfield__input" type="email" id="email" required/>
+                    <label class="mdl-textfield__label" for="email">Email</label>
+                  </div>
+                  <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                    <input class="mdl-textfield__input" type="text" id="school" required/>
+                    <label class="mdl-textfield__label" for="school">Company</label>
+                  </div>
+                  <p class="text-right">
+                    Subscribe
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                      <i class="material-icons">arrow_forward</i>
+                    </button>
+                  </p>
+                </container>
               </form>
-              <form action="#" class="card card-mentor" size="33">
-                <h3>Mentor Registration</h3>
-                <p>We would love to have you over!</p>
-                <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
-                  <input class="mdl-textfield__input" type="text" id="name" required/>
-                  <label class="mdl-textfield__label" for="name">Full Name</label>
-                </div>
-                <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
-                  <input class="mdl-textfield__input" type="email" id="email" required/>
-                  <label class="mdl-textfield__label" for="email">Email</label>
-                </div>
-                <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
-                  <input class="mdl-textfield__input" type="text" id="school" required/>
-                  <label class="mdl-textfield__label" for="school">Company/Organization</label>
-                </div>
-                <p class="text-right">
-                  Register
-                  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-                    <i class="material-icons">arrow_forward</i>
-                  </button>
-                </p>
+              <form action="#" class="card card-mentor">
+                <container>
+                  <h3>Mentor Registration</h3>
+                  <p>We would love to have you over!</p>
+                  <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                    <input class="mdl-textfield__input" type="text" id="name" required/>
+                    <label class="mdl-textfield__label" for="name">Full Name</label>
+                  </div>
+                  <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                    <input class="mdl-textfield__input" type="email" id="email" required/>
+                    <label class="mdl-textfield__label" for="email">Email</label>
+                  </div>
+                  <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                    <input class="mdl-textfield__input" type="text" id="school" required/>
+                    <label class="mdl-textfield__label" for="school">Company/Organization</label>
+                  </div>
+                  <p class="text-right">
+                    Register
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                      <i class="material-icons">arrow_forward</i>
+                    </button>
+                  </p>
+                </container>
               </form>
-              <form action="#" class="card card-sponsor" size="33">
-                <h3>Become a Sponsor!</h3>
-                <p>We would be forever grateful if you sponsored us.</p>
-                <p class="text-right">
-                  Sponsorship information 
-                  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-                    <i class="material-icons">arrow_forward</i>
-                  </button>
-                </p>
+              <form action="#" class="card card-sponsor">
+                <container>
+                  <h3>Become a Sponsor!</h3>
+                  <p>We would be forever grateful if you sponsored us.</p>
+                  <p class="text-right">
+                    Sponsorship information 
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                      <i class="material-icons">arrow_forward</i>
+                    </button>
+                  </p>
+                </container>
               </form>
             </row>
           </container>
@@ -348,7 +351,7 @@
 
         <footer>
           <container>
-            <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect back-to-top" onclick="$('#top').animate({ scrollTop: $('html,body')[0].scrollHeight}, 500);">
+            <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect back-to-top" onclick="$('#top').animate({ scrollTop: $('html,body')[0].scrollHeight}, 500);">
               <i class="material-icons">keyboard_arrow_up</i>
             </a>
             <h2><b>STEM</b>Hacks</h2>
