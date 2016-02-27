@@ -1,9 +1,17 @@
 $(document).ready(function() {
   // Back to top
-  $(".back-to-top").on( "click", function() {
-    $('body').animate({ scrollTop: $('#top')[0].scrollHeight}, 500);
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
   });
-
 
   // Mobile nav
   $(".toggle-nav").on("click", function() {
