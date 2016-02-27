@@ -416,31 +416,31 @@ column,
 }
 .transition-faster {
   transition: all 100ms ease;
-  translateZ: 0px;
+  transform: translateZ(0);
 }
 .transition {
   transition: all 180ms ease;
-  translateZ: 0px;
+  transform: translateZ(0);
 }
 .transition-longer {
   transition: all 300ms ease;
-  translateZ: 0px;
+  transform: translateZ(0);
 }
 .transition-longest {
   transition: all 1s ease;
-  translateZ: 0px;
+  transform: translateZ(0);
 }
 .transition-bounce {
   transition: all 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  translateZ: 0px;
+  transform: translateZ(0);
 }
 .transition-bounce-longer {
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  translateZ: 0px;
+  transform: translateZ(0);
 }
 a {
   transition: all 180ms ease;
-  translateZ: 0px;
+  transform: translateZ(0);
   display: inline-block;
 }
 .left {
@@ -510,7 +510,7 @@ nav {
   background: rgba(255, 255, 255, 0.85);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   transition: all 180ms ease;
-  translateZ: 0px;
+  transform: translateZ(0);
 }
 nav .layout-transparent .mdl-layout__header,
 nav .layout-transparent .mdl-layout__drawer-button {
@@ -540,17 +540,22 @@ nav a.logo img {
   margin-right: 12px;
   padding-top: 2px;
 }
-nav a.attend {
-  float: right;
+nav a.blue-link {
   background: #006ad1;
   color: white;
   font-weight: bold;
   padding-left: 2em;
   padding-right: 2em;
 }
-nav a.attend:hover,
-nav a.attend.active {
+nav a.blue-link:hover,
+nav a.blue-link.active {
   background: #0584ff;
+}
+nav a.hamburger {
+  float: left!important;
+}
+nav a.attend {
+  float: right;
 }
 header {
   padding: 0;
@@ -631,13 +636,13 @@ header animation {
   opacity: .5;
   overflow: hidden;
   transition: all 180ms ease;
-  translateZ: 0px;
+  transform: translateZ(0);
 }
 #photos photo a span {
   position: relative;
   display: inline-block;
   transition: all 180ms ease;
-  translateZ: 0px;
+  transform: translateZ(0);
   transform: translateY(-20px);
   opacity: 0;
 }
@@ -754,7 +759,7 @@ header animation {
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.15);
   padding: 1.5em;
   transition: all 180ms ease;
-  translateZ: 0px;
+  transform: translateZ(0);
 }
 .card h1,
 .card h2,
@@ -834,11 +839,18 @@ header animation {
 #attend form {
   flex-grow: 1;
 }
+#attend .card {
+  display: none;
+  margin: auto;
+  max-width: 800px;
+  margin-top: 1em;
+}
 #attend.active-student .tab-student {
   color: #006ad1;
   border-bottom-color: #006ad1;
 }
 #attend.active-student .card-student {
+  display: block;
   visibility: visible;
   transform: translateY(0px);
   opacity: 1;
@@ -849,6 +861,7 @@ header animation {
   border-bottom-color: #006ad1;
 }
 #attend.active-mentor .card-mentor {
+  display: block;
   visibility: visible;
   transform: translateY(0px);
   opacity: 1;
@@ -859,6 +872,7 @@ header animation {
   border-bottom-color: #006ad1;
 }
 #attend.active-sponsor .card-sponsor {
+  display: block;
   visibility: visible;
   transform: translateY(0px);
   opacity: 1;
@@ -903,6 +917,20 @@ footer .back-to-top:hover {
 footer .back-to-top:active {
   background: #e6e6e6;
 }
+.button {
+  background: #006ad1;
+  color: white;
+  font-weight: bold;
+  padding: .75em 1.5em;
+  margin: .25em;
+  border-radius: 4px;
+  transition: all 180ms ease;
+  transform: translateZ(0);
+}
+.button:hover,
+.button.active {
+  background: #0584ff;
+}
 .visible-mobile,
 .hidden-desktop {
   display: none!important;
@@ -926,7 +954,42 @@ footer .back-to-top:active {
   }
   nav {
     background: white!important;
+  }
+  nav a:not(.blue-link) {
     color: #212121 !important;
+  }
+  nav .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background: white;
+    box-shadow: 0 0 20px;
+    height: 100vh;
+    width: 60vw;
+    min-width: 150px;
+    max-width: 350px;
+    transition: all 180ms ease;
+    transform: translateZ(0);
+    left: -100%;
+    z-index: 500;
+  }
+  nav .mobile-menu a {
+    display: block;
+    width: 100%;
+    padding: .5em .75em;
+    border-bottom: 1px solid lightGray;
+  }
+  body.nav-is-open .mobile-menu {
+    left: 0;
+  }
+  body.nav-is-open nav .hamburger {
+    transition: none!important;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 100;
   }
   h1 {
     font-size: 4em;
@@ -1020,6 +1083,10 @@ footer .back-to-top:active {
     border-right: 0;
     display: block;
     float: initial;
+  }
+  #attend .button {
+    display: block;
+    margin: 1em;
   }
 }
 @media (max-width: 500px) {
