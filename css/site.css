@@ -670,7 +670,7 @@ header animation {
   top: 2em;
   left: 1.5em;
   width: 100%;
-  max-width: 580px;
+  max-width: 500px;
   height: auto;
   z-index: 400;
 }
@@ -684,9 +684,10 @@ header animation {
   text-align: center;
   display: block;
   border-right: 1px solid #d5d5d5;
+  padding: .35em 0;
 }
 #venue .card-address i {
-  font-size: 3em;
+  font-size: 2.5em;
   display: block;
 }
 #venue .card-address column:last-of-type a {
@@ -873,7 +874,7 @@ header animation {
   text-decoration: underline;
 }
 #faq {
-  background: white;
+  background: #fafafa;
 }
 #faq .card-faq {
   padding: 0;
