@@ -732,8 +732,9 @@ header animation {
   color: white;
 }
 #schedule .card-schedule {
-  margin: 1em auto;
-  max-width: 400px;
+  margin: .25em auto;
+  max-width: 420px;
+  padding: .5em;
 }
 #schedule .card-schedule table {
   display: block;
