@@ -64,7 +64,7 @@ header,
 section,
 footer {
   position: relative;
-  padding: 70px 0;
+  padding: 45px 0;
   background-size: cover;
   background-position: middle;
   background-repeat: no-repeat;
@@ -560,7 +560,7 @@ nav a.attend {
 header {
   padding: 0;
   text-align: center;
-  height: 100vh;
+  height: 85vh;
   max-height: 900px;
   min-height: 650px;
   display: flex;
@@ -887,6 +887,7 @@ header animation {
 #attend {
   display: block;
   height: 30em;
+  padding-top: 30px;
   background: #fafafa;
   height: auto;
   overflow: hidden;
