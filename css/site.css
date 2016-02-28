@@ -735,6 +735,14 @@ header animation {
   max-width: 420px;
   padding: .5em;
 }
+#schedule .card-schedule h3 {
+  font-size: 2em;
+  text-align: left;
+  font-weight: 200;
+  padding: 1em;
+  margin-bottom: 0;
+  border-bottom: 1px solid #d5d5d5;
+}
 #schedule .card-schedule table {
   display: block;
 }
@@ -755,6 +763,7 @@ header animation {
   padding: .5em;
 }
 #schedule .card-schedule table tbody tr td:first-of-type {
+  opacity: .5;
   width: 90px;
 }
 .card {
@@ -781,6 +790,10 @@ header animation {
   background: #006ad1;
   color: white;
   text-align: center;
+}
+#sponsors container {
+  max-width: 1920px;
+  padding: 0 80px;
 }
 #sponsors column {
   padding: .5em;
