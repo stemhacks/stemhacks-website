@@ -294,13 +294,15 @@ header {
   color: white;
   padding-bottom: 0px;
   container {
-    max-width: (280px*3)+100px;
+    // max-width: (280px*3)+100px;
+  }
+  column {
+    padding: .5em;
   }
   .card-sponsor {
     padding: 0;
     width: 100%;
-    max-width: 280px;
-    margin: auto;
+    // max-width: 280px;
     margin-bottom: 1em;
     overflow: hidden;
     z-index: 5;
@@ -309,9 +311,10 @@ header {
     }
     .logo {
       padding: 0 20px;
-      line-height: 200px;
-      height: 200px;
+      line-height: 150px;
+      height: 150px;
       background: @paper;
+      background-position: center;
     }
     i {
       line-height: 2.75em;
@@ -334,7 +337,7 @@ header {
 #faq {
   background: white;
   container {
-    max-width: (280px*3)+100px;
+    // max-width: (280px*3)+100px;
   }
   .card-faq {
     padding: 0;
@@ -347,15 +350,38 @@ header {
     &:hover {
     }
     .question {
+      position: relative;
       padding: .75em;
       font-weight: bold;
-      background: @blue;
+      background: @gray;
       color: white;
     }
     .answer {
       padding: .75em;
       font-size: .85em;
       line-height: 1.5em;
+    }
+  }
+  .card-faq {
+    .question {
+      cursor: pointer;
+      .material-icons {
+        margin-top: 3px;
+        .transition;
+      }
+    }
+    .answer {
+      display: none;
+    }
+    &.answer-is-open {
+      .question {
+        .material-icons {
+          transform: rotate(90deg);
+        }
+      }
+      .answer {
+        display: block;
+      }
     }
   }
 }
