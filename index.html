@@ -266,18 +266,21 @@
         </section>
 
 
-        <section id="attend" class="active-buttons">
+        <section id="attend" class="active-select">
           <container>
             <div class="text-center">
             <h1>Attend</h1>
-            <p class="lead">Who are you?</p>
-            <a onclick="attendTab('student')" class="button">I am currently a high school student</a>
-            <a onclick="attendTab('mentor')" class="button">I want to mentor</a>
-            <a onclick="attendTab('sponsor')" class="button">I want to sposnor</a>
-            <row>
+            <div class="select">
+              <p class="lead">Who are you?</p>
+              <a onclick="attendTab('student')" class="button attend-button">I am currently a high school student <i class="material-icons right">chevron_right</i></a>
+              <a onclick="attendTab('mentor')" class="button attend-button">I want to mentor <i class="material-icons right">chevron_right</i></a>
+              <a onclick="attendTab('sponsor')" class="button attend-button">I want to sponsor <i class="material-icons right">chevron_right</i></a>
+            </div>
+            <row class="row-student">
               <form action="#" class="card card-student">
                 <container>
-                  <h3>Student Intrerest Form</h3>
+                  <a onclick="attendTab('select')" class="back-arrow"><i class="material-icons">chevron_left</i></a>
+                  <h3>Student Interest Form</h3>
                   <p>Student registration isn't open right now, but we'll send you an email as soon as it opens.</p>
                   <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
                     <input class="mdl-textfield__input" type="text" id="name" required/>
@@ -289,7 +292,7 @@
                   </div>
                   <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
                     <input class="mdl-textfield__input" type="text" id="school" required/>
-                    <label class="mdl-textfield__label" for="school">Company</label>
+                    <label class="mdl-textfield__label" for="school">School</label>
                   </div>
                   <p class="text-right">
                     Subscribe
@@ -299,8 +302,11 @@
                   </p>
                 </container>
               </form>
+            </row>
+            <row class="row-mentor">
               <form action="#" class="card card-mentor">
                 <container>
+                  <a onclick="attendTab('select')" class="back-arrow"><i class="material-icons">chevron_left</i></a>
                   <h3>Mentor Registration</h3>
                   <p>We would love to have you over!</p>
                   <div class="field mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
@@ -323,16 +329,19 @@
                   </p>
                 </container>
               </form>
+            </row>
+            <row class="row-sponsor">
               <form action="#" class="card card-sponsor">
                 <container>
+                  <a onclick="attendTab('select')" class="back-arrow"><i class="material-icons">chevron_left</i></a>
                   <h3>Become a Sponsor!</h3>
                   <p>We would be forever grateful if you sponsored us.</p>
-                  <p class="text-right">
-                    Sponsorship information 
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-                      <i class="material-icons">arrow_forward</i>
-                    </button>
-                  </p>
+                  <a href="#">
+                    <img src="/img/sponsorship-placeholder.png" alt="">
+                  </a>
+                  <br><br>
+                  <a href="#" class="button"><i class="material-icons">description</i> Sponsor Info (PDF)</a>
+                  <a href="mailto:sponsor@stemhacks.com" class="button"><i class="material-icons">email</i> Contact</a>
                 </container>
               </form>
             </row>

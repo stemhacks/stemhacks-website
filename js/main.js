@@ -17,7 +17,13 @@ $(document).ready(function() {
   $(".toggle-nav").on("click", function() {
     $('body').toggleClass("nav-is-open");
   });
+
 });
+
+// Attend "Tabs"
+function attendTab(tab) {
+  $("#attend").attr('class', ('active-'+tab));
+}
 
 // Countup
 var options = {
@@ -75,10 +81,6 @@ function mapDriving() {
   var geojson = {"type":"FeatureCollection","features":[]};
   map.featureLayer.setGeoJSON(geojson);
   map.setView([40.046014541872594,-75.87357788085936], 10);
-}
-function attendTab(tab) {
-  event.preventDefault();
-  $("#attend").attr('class', ('active-'+tab));
 }
 
 // Scroll Timer!

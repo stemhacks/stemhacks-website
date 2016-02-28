@@ -329,9 +329,31 @@ header {
 }
 
 #attend {
-  background: @white;
+  display: block;
+  height: 30em;
+  background: #fafafa;
+  height: auto;
+  overflow: hidden;
+  .transition;
   container {
     // max-width: 400px;
+  }
+  .attend-button {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 1em;
+    .right {
+      font-size: 1.85em;
+      transform: translateX(6px);
+      .transition;
+    }
+    &:hover {
+      .right {
+        transform: translateX(10px);
+      }
+    }
   }
   .field {
     width: 100%;
@@ -355,62 +377,95 @@ header {
   .text-center {
     position: relative;
   }
+  row {
+    position: absolute;
+    width: 100%;
+    transform: scale(1) rotate(0deg) translateY(150px);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    .transition;
+  }
   .card {
-    // opacity: 0;
+    // display: none;
+    // height: 0;
+    margin: auto;
+    max-width: 550px;
+    transform-origin: center;
+    .transition;
+    width: 100%;
     // position: absolute;
-    // transform: translateY(20px);
-    // width: 100%;
-    &:last-of-type {
-      // position: relative;
-      // margin-bottom: 300px;
+    top: 0;
+    .back-arrow {
+      position: absolute;
+      left: 1.5em;
+      top: 1.15em;
+      .transition;
+      transform: scale(1.5);
+      &:hover {
+        padding-right: 20px;
+      }
+    }
+    img {
+      display: block;
+      width: 100%;
     }
   }
-  form {
-    flex-grow: 1;
-  }
-  .card {
-    display: none;
-    margin: auto;
-    max-width: 800px;
-    margin-top: 1em;
-  }
   &.active-student {
+    // height: 46em;
+    padding-bottom: 15em;
+    row {
+      // margin-top: -17em;
+    }
     .tab-student {
       color: @blue;
       border-bottom-color: @blue;
     }
-    .card-student {
-      display: block;
+    .row-student {
+      margin-top: -17em;
       visibility: visible;
-      transform: translateY(0px);
+      transform: scale(1) rotate(0deg) translateY(0px);
       opacity: 1;
-      pointer-events: default;
+      pointer-events: initial;
+      // height: auto;
     }
   }
   &.active-mentor {
+    // height: 46em;
+    padding-bottom: 15em;
+    row {
+      // margin-top: -17em;
+    }
     .tab-mentor {
       color: @blue;
       border-bottom-color: @blue;
     }
-    .card-mentor {
-      display: block;
+    .row-mentor {
+      margin-top: -17em;
       visibility: visible;
-      transform: translateY(0px);
+      transform: scale(1) rotate(0deg) translateY(0px);
       opacity: 1;
-      pointer-events: default;
+      pointer-events: initial;
+      // height: auto;
     }
   }
   &.active-sponsor {
+    // height: 46em;
+    padding-bottom: 15em;
+    row {
+      // margin-top: -17em;
+    }
     .tab-sponsor {
       color: @blue;
       border-bottom-color: @blue;
     }
-    .card-sponsor {
-      display: block;
+    .row-sponsor {
+      margin-top: -17em;
       visibility: visible;
-      transform: translateY(0px);
+      transform: scale(1) rotate(0deg) translateY(0px);
       opacity: 1;
-      pointer-events: default;
+      pointer-events: initial;
+      // height: auto;
     }
   }
 }
