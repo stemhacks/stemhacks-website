@@ -297,7 +297,8 @@ header {
 #sponsors {
   background: @blue;
   color: white;
-  padding-bottom: 0px;
+  text-align: center;
+  // padding-bottom: 0px;
   container {
     // max-width: (280px*3)+100px;
   }
@@ -343,7 +344,7 @@ header {
     }
   }
   .grayscale-sponsor {
-    margin-top: -1em;
+    // margin-top: -1em;
     text-align: center;
     a {
       margin: 1em;
@@ -352,14 +353,28 @@ header {
       -webkit-filter: grayscale(100%) brightness(200%);
       -moz-filter: grayscale(100%) brightness(200%);
       opacity: .75;
-      img {
-        max-height: 50px;
-      }
       &:hover {
         filter: grayscale(0%) brightness(150%);
         -webkit-filter: grayscale(0%) brightness(150%);
         -moz-filter: grayscale(0%) brightness(150%);
         opacity: 1;
+      }
+    }
+    &.large {
+      img {
+        max-height: 180px;
+        max-width: 300px
+      }
+    }
+    &.midsize {
+      img {
+        max-height: 100px;
+        max-width: 200px;
+      }
+    }
+    &.small {
+      img {
+        max-height: 50px;
       }
     }
   }
@@ -373,6 +388,10 @@ header {
       color: white;
       text-decoration: underline;
     }
+  }
+  p a {
+    color: white;
+    text-decoration: underline;
   }
 }
 
