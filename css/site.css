@@ -608,6 +608,7 @@ header animation {
   font-size: 1.5em;
 }
 #photos {
+  padding: 0px;
   display: flex;
   flex-wrap: wrap;
   max-height: 655px;
