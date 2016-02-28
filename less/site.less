@@ -331,6 +331,35 @@ header {
   }
 }
 
+#faq {
+  background: white;
+  container {
+    max-width: (280px*3)+100px;
+  }
+  .card-faq {
+    padding: 0;
+    // width: 100%;
+    // max-width: 280px;
+    margin: .5em;
+    margin-bottom: 1em;
+    overflow: hidden;
+    z-index: 5;
+    &:hover {
+    }
+    .question {
+      padding: .75em;
+      font-weight: bold;
+      background: @blue;
+      color: white;
+    }
+    .answer {
+      padding: .75em;
+      font-size: .85em;
+      line-height: 1.5em;
+    }
+  }
+}
+
 #attend {
   display: block;
   height: 30em;

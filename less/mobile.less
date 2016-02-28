@@ -15,6 +15,9 @@
   header, section, footer {
     padding: 40px 0;
   }
+  h1 {
+    font-size: 3em;
+  }
   nav {
     background: white!important;
     a:not(.blue-link) {
@@ -57,7 +60,7 @@
     }
   }
   h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
   h2, h3 {
     font-size: 2.5em;
@@ -148,6 +151,31 @@
     a {
       color: white;
       text-decoration: underline;
+    }
+  }
+  #faq {
+    .card-faq {
+      .question {
+        cursor: pointer;
+        background: white;
+        color: inherit;
+        .material-icons {
+          .transition;
+        }
+      }
+      .answer {
+        display: none;
+      }
+      &.answer-is-open {
+        .question {
+          .material-icons {
+            transform: rotate(90deg);
+          }
+        }
+        .answer {
+          display: block;
+        }
+      }
     }
   }
   footer {

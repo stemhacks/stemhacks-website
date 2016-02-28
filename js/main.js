@@ -18,6 +18,11 @@ $(document).ready(function() {
     $('body').toggleClass("nav-is-open");
   });
 
+  // Mobile nav
+  $(".question").on("click", function() {
+    $(this).parent().toggleClass("answer-is-open");
+  });
+
 });
 
 // Attend "Tabs"
