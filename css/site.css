@@ -780,7 +780,7 @@ header animation {
 #sponsors {
   background: #006ad1;
   color: white;
-  padding-bottom: 0px;
+  text-align: center;
 }
 #sponsors column {
   padding: .5em;
@@ -819,7 +819,6 @@ header animation {
   background-position: center;
 }
 #sponsors .grayscale-sponsor {
-  margin-top: -1em;
   text-align: center;
 }
 #sponsors .grayscale-sponsor a {
@@ -830,14 +829,22 @@ header animation {
   -moz-filter: grayscale(100%) brightness(200%);
   opacity: .75;
 }
-#sponsors .grayscale-sponsor a img {
-  max-height: 50px;
-}
 #sponsors .grayscale-sponsor a:hover {
   filter: grayscale(0%) brightness(150%);
   -webkit-filter: grayscale(0%) brightness(150%);
   -moz-filter: grayscale(0%) brightness(150%);
   opacity: 1;
+}
+#sponsors .grayscale-sponsor.large img {
+  max-height: 180px;
+  max-width: 300px;
+}
+#sponsors .grayscale-sponsor.midsize img {
+  max-height: 100px;
+  max-width: 200px;
+}
+#sponsors .grayscale-sponsor.small img {
+  max-height: 50px;
 }
 #sponsors .bottom {
   background: #006ad1;
@@ -845,6 +852,10 @@ header animation {
   padding-bottom: 30px;
 }
 #sponsors .bottom a {
+  color: white;
+  text-decoration: underline;
+}
+#sponsors p a {
   color: white;
   text-decoration: underline;
 }
