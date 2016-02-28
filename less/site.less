@@ -374,16 +374,44 @@ header {
       }
     }
     .answer {
-      display: none;
+      // display: none;
+      // height: auto;
+      max-height: 100px;
+      position: relative;
+      overflow: hidden;
+      .transition;
+      &:after {
+        content: ' ';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(transparent,transparent,rgba(255,255,255,.5),white);
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        .transition;
+      }
+    }
+    &:hover {
+      .answer {
+        color: black;
+      }
     }
     &.answer-is-open {
       .question {
+        height: auto;
         .material-icons {
           transform: rotate(90deg);
         }
       }
       .answer {
+        // color: black;
         display: block;
+        max-height: 100vh;
+        &:after {
+          cursor-events: none;
+          background: transparent;
+        }
       }
     }
   }

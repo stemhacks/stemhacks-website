@@ -22,6 +22,9 @@ $(document).ready(function() {
   $(".question").on("click", function() {
     $(this).parent().toggleClass("answer-is-open");
   });
+  $(".card-faq:not(.answer-is-open) .answer").on("click", function() {
+    $(this).parent().toggleClass("answer-is-open");
+  });
 
 });
 
