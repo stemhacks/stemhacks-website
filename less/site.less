@@ -314,7 +314,7 @@ header {
       color: @blue;
     }
     .logo {
-      padding: 0 20px;
+      padding: 0 15px;
       line-height: 150px;
       height: 150px;
       background: @paper;
@@ -328,6 +328,38 @@ header {
       padding: 1em;
       width: 100%;
       background: white;
+    }
+  }
+  [size="25"] {
+    .card-sponsor {
+      .logo {
+        padding: 0 10px;
+        line-height: 110px;
+        height: 110px;
+        background: @paper;
+        background-position: center;
+      }
+    }
+  }
+  .grayscale-sponsor {
+    margin-top: -1em;
+    text-align: center;
+    a {
+      margin: 1em;
+      display: inline-block;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      opacity: .75;
+      img {
+        max-height: 50px;
+      }
+      &:hover {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        opacity: 1;
+      }
     }
   }
   .bottom {
