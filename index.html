@@ -33,7 +33,7 @@
         <span id="top"></span>
 
         <nav class="nav-top at-top">
-          <a class="hamburger blue-link hidden-desktop toggle-nav">Menu</a><a href="#" class="logo mdl-js-ripple-effect"><img src="/img/brand/logo.svg"/> <b>STEM</b>Hacks</a><span class="mobile-menu"><a href="#" class="mdl-js-ripple-effect toggle-nav">Home</a><a href="#about" class="mdl-js-ripple-effect toggle-nav">About</a><a href="#schedule" class="mdl-js-ripple-effect toggle-nav">Schedule</a><a href="#venue" class="mdl-js-ripple-effect toggle-nav">Venue</a><a href="#sponsors" class="mdl-js-ripple-effect toggle-nav">Sponsors</a><a href="#faq" class="mdl-js-ripple-effect toggle-nav">FAQ</a><a href="#contact" class="mdl-js-ripple-effect toggle-nav">Contact</a></span><a href="#attend" class="attend blue-link mdl-js-ripple-effect">Attend</a>
+          <a class="hamburger blue-link hidden-desktop toggle-nav"><i class="material-icons">view_headline</i></a><a href="#" class="logo mdl-js-button mdl-js-ripple-effect"><img src="/img/brand/logo.svg"/> <b>STEM</b>Hacks</a><span class="mobile-menu"><a href="#" class="mdl-js-button mdl-js-ripple-effect toggle-nav">Home</a><a href="#about" class="mdl-js-button mdl-js-ripple-effect toggle-nav">About</a><a href="#schedule" class="mdl-js-button mdl-js-ripple-effect toggle-nav">Schedule</a><a href="#venue" class="mdl-js-button mdl-js-ripple-effect toggle-nav">Venue</a><a href="#sponsors" class="mdl-js-button mdl-js-ripple-effect toggle-nav">Sponsors</a><a href="#faq" class="mdl-js-button mdl-js-ripple-effect toggle-nav">FAQ</a><a href="#contact" class="mdl-js-button mdl-js-ripple-effect toggle-nav">Contact</a></span><a href="#attend" class="attend blue-link mdl-js-button mdl-js-ripple-effect">Attend</a>
         </nav>
 
         <header>
@@ -73,7 +73,7 @@
           </container>
         </section>
 
-        <section id="photos">
+        <section id="photos" class="hidden-mobile">
           <photo style="background-image:url(https://unsplash.it/500/300/?random)">
             <a href="#">
               <i class="material-icons">info</i> <span>Students making an app</span>
@@ -151,9 +151,8 @@
             </div>
           </container>
         </section>
-
-
         <section id="venue">
+          <h1 class="hidden-desktop text-center">Venue</h1>
           <overlay>
               <div class="card card-address">
                 <row>
@@ -184,12 +183,12 @@
               <div class="card card-attach card-transit hidden-mobile">
                 <h3>Public Transit  <i class="material-icons float-right">directions_transit</i></h3>
                 <p><a href="#">SEPTA</a> provides hourly trains between Malvern and Center City Philadelphia.</p>
-                <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Schedule</a>                     <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Fares</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">Schedule</a>                     <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">Fares</a>
               </div>
               <div class="card card-attach card-driving hidden-mobile">
                 <h3>Driving  <i class="material-icons float-right">directions_car</i></h3>
                 <p>Take US 202 to Swedesford Rd North. Turn right at the first light. The venue is on your left.</p>
-                <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Google Maps</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">Google Maps</a>
               </div>
           </overlay>
           <mapbox id="map"></mapbox>
@@ -203,7 +202,7 @@
             </div>
             <rows>
               <column size="33">
-                <a href="#" target="_blank" class="card card-sponsor">
+                <a href="#" target="_blank" class="card card-sponsor mdl-js-button mdl-js-ripple-effect">
                   <div class="logo">
                     <img src="http://i.imgur.com/iVazOXo.png" alt="">
                   </div>
@@ -212,7 +211,7 @@
                 </a>
               </column>
               <column size="33">
-                <a href="#" target="_blank" class="card card-sponsor">
+                <a href="#" target="_blank" class="card card-sponsor mdl-js-button mdl-js-ripple-effect">
                   <div class="logo">
                     <img src="http://i.imgur.com/iVazOXo.png" alt="">
                   </div>
@@ -221,7 +220,7 @@
                 </a>
               </column>
               <column size="33">
-                <a href="#" target="_blank" class="card card-sponsor">
+                <a href="#" target="_blank" class="card card-sponsor mdl-js-button mdl-js-ripple-effect">
                   <div class="logo">
                     <img src="http://i.imgur.com/iVazOXo.png" alt="">
                   </div>
@@ -230,7 +229,7 @@
                 </a>
               </column>
               <column size="33">
-                <a href="#" target="_blank" class="card card-sponsor">
+                <a href="#" target="_blank" class="card card-sponsor mdl-js-button mdl-js-ripple-effect">
                   <div class="logo">
                     <img src="http://i.imgur.com/iVazOXo.png" alt="">
                   </div>
@@ -239,7 +238,7 @@
                 </a>
               </column>
               <column size="33">
-                <a href="#" target="_blank" class="card card-sponsor">
+                <a href="#" target="_blank" class="card card-sponsor mdl-js-button mdl-js-ripple-effect">
                   <div class="logo">
                     <img src="http://i.imgur.com/iVazOXo.png" alt="">
                   </div>
@@ -248,7 +247,7 @@
                 </a>
               </column>
               <column size="33">
-                <a href="#" target="_blank" class="card card-sponsor">
+                <a href="#" target="_blank" class="card card-sponsor mdl-js-button mdl-js-ripple-effect">
                   <div class="logo">
                     <img src="http://i.imgur.com/iVazOXo.png" alt="">
                   </div>
@@ -272,9 +271,9 @@
             <h1>Attend</h1>
             <div class="select">
               <p class="lead">Who are you?</p>
-              <a onclick="attendTab('student')" class="button attend-button">I am currently a high school student <i class="material-icons right">chevron_right</i></a>
-              <a onclick="attendTab('mentor')" class="button attend-button">I want to mentor <i class="material-icons right">chevron_right</i></a>
-              <a onclick="attendTab('sponsor')" class="button attend-button">I want to sponsor <i class="material-icons right">chevron_right</i></a>
+              <a onclick="attendTab('student')" class="button attend-button mdl-js-button mdl-js-ripple-effect">I am currently a high school student <i class="material-icons right">chevron_right</i></a>
+              <a onclick="attendTab('mentor')" class="button attend-button mdl-js-button mdl-js-ripple-effect">I want to mentor <i class="material-icons right">chevron_right</i></a>
+              <a onclick="attendTab('sponsor')" class="button attend-button mdl-js-button mdl-js-ripple-effect">I want to sponsor <i class="material-icons right">chevron_right</i></a>
             </div>
             <row class="row-student">
               <form action="#" class="card card-student">
@@ -360,7 +359,7 @@
 
         <footer>
           <container>
-            <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect back-to-top" onclick="$('#top').animate({ scrollTop: $('html,body')[0].scrollHeight}, 500);">
+            <a href="#top" class="mdl-button mdl-js-button mdl-button--fab mdl-js-button mdl-js-ripple-effect back-to-top" onclick="$('#top').animate({ scrollTop: $('html,body')[0].scrollHeight}, 500);">
               <i class="material-icons">keyboard_arrow_up</i>
             </a>
             <h2><b>STEM</b>Hacks</h2>

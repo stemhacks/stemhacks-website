@@ -33,7 +33,7 @@ nav {
     color: @gray;
     font-weight: normal;
     &:hover {
-      background: darken(@white, 5%);
+      background: rgba(0,0,0,.1);
     }
     &.logo {
       padding-left: 2em;
@@ -256,6 +256,9 @@ header {
           display: block;
           &:last-of-type {
             border-bottom-width: 0px;
+          }
+          &:hover {
+            background: #fafafa;
           }
           td {
             padding: .5em;
