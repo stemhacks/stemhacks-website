@@ -347,26 +347,31 @@ header {
     a {
       margin: 1em;
       display: inline-block;
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
+      filter: grayscale(100%) brightness(200%);
+      -webkit-filter: grayscale(100%) brightness(200%);
+      -moz-filter: grayscale(100%) brightness(200%);
       opacity: .75;
       img {
         max-height: 50px;
       }
       &:hover {
-        filter: grayscale(0%);
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
+        filter: grayscale(0%) brightness(150%);
+        -webkit-filter: grayscale(0%) brightness(150%);
+        -moz-filter: grayscale(0%) brightness(150%);
         opacity: 1;
       }
     }
   }
   .bottom {
-    background: white;
-    color: @gray;
-    margin-top: -6em;
-    padding-top: 7em;
+    background: @blue;
+    color: white;
+    // margin-top: -6em;
+    // padding-top: 7em;
+    padding-bottom: 30px;
+    a {
+      color: white;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -389,7 +394,7 @@ header {
       position: relative;
       padding: .75em;
       font-weight: bold;
-      background: @gray;
+      background: @blue;
       color: white;
     }
     .answer {
