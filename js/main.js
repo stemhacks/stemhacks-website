@@ -44,11 +44,11 @@ var options = {
 };
 var count1 = new CountUp("count1", 0, 200, 0, 5, options);
 count1.start();
-var count2 = new CountUp("count2", 0, 50, 0, 3.5, options);
+/*var count2 = new CountUp("count2", 0, 50, 0, 3.5, options);
 count2.start();
 var count3 = new CountUp("count3", 0, 85, 0, 3.5, options);
-count3.start();
-var count4 = new CountUp("count4", 0, 24, 0, 2.5, options);
+count3.start(); */
+var count4 = new CountUp("count4", 0, 24, 0, 5, options);
 count4.start();
 
 // Provide your access token
