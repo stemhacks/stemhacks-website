@@ -42,7 +42,7 @@ var options = {
   prefix : '',
   suffix : ''
 };
-var count1 = new CountUp("count1", 0, 200, 0, 5, options);
+var count1 = new CountUp("count1", 0, 100, 0, 4, options);
 count1.start();
 /*var count2 = new CountUp("count2", 0, 50, 0, 3.5, options);
 count2.start();
